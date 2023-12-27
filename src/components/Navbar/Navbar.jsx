@@ -10,7 +10,7 @@ export default function Navbar(){
         <>
             <nav className={styles.navbar}>
                 <div className={styles.logoDiv}><img  src={Logo} alt="img" width={65}/></div>
-                 <Search search={"Search a song of your choice"}/>
+                 <Search search={"search a song of your choice"}/>
                  <FeedBack props="Give Feedback"/>
             </nav>
         </>
