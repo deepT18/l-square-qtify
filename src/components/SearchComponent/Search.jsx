@@ -7,7 +7,7 @@ export default function Search(){
     return(
         <>
         <form action="submit" className={styles.main}>
-            <input type="text" placeholder="search" className={styles.searchBar}/>
+            <input type="text" placeholder="Search a song of your choice" className={styles.searchBar}/>
             <button type="submit" className={styles.searchBtn}>
                 <SearchIcon/>
             </button>
