@@ -7,7 +7,7 @@ function App() {
   return(
     <>
      <Button props={"Give Feedback"}/>
-     <Search placeholder="Enter"/>
+     <Search props="Enter"/>
     </>
   )
 }
