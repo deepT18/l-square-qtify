@@ -1,7 +1,7 @@
-.button{
+.feedback{
     background-color: var(--color-black);
     color:var(--color-primary) ;
-    width: Hug (170px);
+    width:(170px);
     height:(47px);
     top: 13px;
     left: 1238px;

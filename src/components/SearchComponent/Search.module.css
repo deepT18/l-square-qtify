@@ -5,22 +5,21 @@
     height: 48px;
 }
 
-.searcBar{
-   padding:14px 20px;
-   border-radius:8px;
-   border-top-right-radius: 0px;
-   border-bottom-right-radius: 0px;
-   border:1px solid var(--color-black);
-   width:502px;
-   height:100%;
+.searchBar{
+    width: 502px;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--color-black);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 14px 20px;
 }
 
 .searchBtn{
-border-radius: 0px 8px 8px 0px;
-padding:14px 20px;
-border:1px solid var(--color-black);
-border-left:none;
-cursor:pointer;
-height:100%;
-
+    border-radius: 0px 8px 8px 0px;
+    border-left: none;
+    border: 1px solid var(--color-black);
+    cursor: pointer;
+    height: 100%;
+    padding: 14px 20px;
 }

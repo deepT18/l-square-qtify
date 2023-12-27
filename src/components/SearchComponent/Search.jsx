@@ -8,7 +8,7 @@ export default function Search({props}){
         <>
         <form action="submit" className={styles.main}>
             <input type="text" placeholder={props} className={styles.searchBar}/>
-            <button className={styles.searchBtn}>
+            <button type="submit" className={styles.searchBtn}>
                 <SearchIcon/>
             </button>
         </form>
