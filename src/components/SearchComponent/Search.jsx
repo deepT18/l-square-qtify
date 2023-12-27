@@ -3,11 +3,11 @@ import styles from "./Search.module.css";
 import "../../index.css";
 import {ReactComponent as SearchIcon} from "../../assets/Search icon.svg"
 
-export default function Search({props}){
+export default function Search(){
     return(
         <>
         <form action="submit" className={styles.main}>
-            <input type="text" placeholder={props} className={styles.searchBar}/>
+            <input type="text" placeholder="search" className={styles.searchBar}/>
             <button type="submit" className={styles.searchBtn}>
                 <SearchIcon/>
             </button>
