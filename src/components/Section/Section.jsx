@@ -1,10 +1,10 @@
 import React from 'react'
-import NewAlbumSection from "./topAlbumSection"
+import TopAlbumSection from "./topAlbumSection"
 
 const Section = () => {
   return (
     <div>
-        <NewAlbumSection title="Top Album" type="album"/>
+        <TopAlbumSection title="Top Albums" type="album"/>
         
     </div>
   )

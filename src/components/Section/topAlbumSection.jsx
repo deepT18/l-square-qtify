@@ -4,9 +4,12 @@ import Card from "../Card/Card.jsx";
 import Grid from "@mui/material/Grid";
 import styles from "./Section.module.css";
 
-const YourComponent = () => {
+
+
+const TopAlbumSection = () => {
+
   const [topAlbums, setTopAlbums] = useState([]);
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -15,8 +18,6 @@ const YourComponent = () => {
           "https://qtify-backend-labs.crio.do/albums/top"
         );
         const data = response.data;
-        console.log(data);
-
         setTopAlbums(data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -33,15 +34,14 @@ const YourComponent = () => {
   return (
     <div className={styles.albumHeader}>
       <div className={styles.headingShow}>
-      <h3>Top Albums</h3>
-      <h4 onClick={handleToggle} className={styles.toggleText}>
-        {toggle ?"Collapse" :  "Show All"}
-      </h4>
-      </div>
-      
+        <h3>Top Albums</h3>
+        <h4 onClick={handleToggle} className={styles.toggleText}>
+          {toggle ? "Collapse":"Show All"}
+        </h4>
+        </div>
       {toggle ? (
         <div className={styles.wrapper}>
-          <Grid container spacing={3}>
+          <Grid container spacing={2}>
             {topAlbums.map((album) => (
               <Grid item key={album.id} xs={12} sm={6} md={6} lg={2}>
                 <Card album={album} key={album.id} />
@@ -54,4 +54,4 @@ const YourComponent = () => {
   );
 };
 
-export default YourComponent;
+export default TopAlbumSection;
