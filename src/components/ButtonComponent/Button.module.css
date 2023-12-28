@@ -1,8 +1,8 @@
 .feedback{
     background-color: var(--color-black);
     color:var(--color-primary) ;
-    width:(170px);
-    height:(47px);
+    width:170px;
+    height:47px;
     top: 13px;
     left: 1238px;
     padding: 10px, 16px, 10px, 16px;
