@@ -6,7 +6,7 @@ import styles from "./Section.module.css";
 
 
 
-const TopAlbumSection = () => {
+const AlbumSection = ({albumDatas, title}) => {
 
   const [topAlbums, setTopAlbums] = useState([]);
   const [toggle, setToggle] = useState(true);
@@ -34,7 +34,7 @@ const TopAlbumSection = () => {
   return (
     <div className={styles.albumHeader}>
       <div className={styles.headingShow}>
-        <h3>Top Albums</h3>
+        <h3>{title}</h3>
         <h4 onClick={handleToggle} className={styles.toggleText}>
           {toggle ? "Collapse":"Show All"}
         </h4>
@@ -54,4 +54,4 @@ const TopAlbumSection = () => {
   );
 };
 
-export default TopAlbumSection;
+export default AlbumSection;

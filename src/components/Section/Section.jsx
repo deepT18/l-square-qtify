@@ -1,10 +1,14 @@
 import React from 'react'
-import TopAlbumSection from "./topAlbumSection"
+import AlbumSection from "./AlbumSection"
+import {fetchNewAlbums,fetchSongs,fetchTopAlbums} from "../../apis/api"
+
 
 const Section = () => {
   return (
     <div>
-        <TopAlbumSection title="Top Albums" type="album"/>
+        <AlbumSection fetchTopAlbums title="Top Albums" />
+        <AlbumSection fetchNewAlbums title="New Albums" />
+        
         
     </div>
   )
