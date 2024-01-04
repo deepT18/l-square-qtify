@@ -24,7 +24,7 @@ const AlbumSection = ({ datas, title, type }) => {
       <div className="albumSection">
         {datas === null || datas === undefined ? (
           <CircularProgress />
-        ) : toggle ? (
+        ) : !toggle ? (
           <div className={styles.wrapper}>
             <Grid container className={styles.gridContainer} spacing={2}>
               {datas.map((data) => (
