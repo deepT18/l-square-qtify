@@ -17,14 +17,14 @@ const AlbumSection = ({ datas, title, type }) => {
       <div className={styles.headingShow}>
         <h3>{title}</h3>
         <h4 onClick={handleToggle} className={styles.toggleText}>
-          {toggle ? "Collapse" : "Show all"}
+          {toggle ? "Collapse" : "show all"}
         </h4>
       </div>
 
       <div className="albumSection">
         {datas === null || datas === undefined ? (
           <CircularProgress />
-        ) : !toggle ? (
+        ) : toggle ? (
           <div className={styles.wrapper}>
             <Grid container className={styles.gridContainer} spacing={2}>
               {datas.map((data) => (
