@@ -6,10 +6,18 @@ export default function Hero() {
   return (
     <>
       <div className={styles.hero}>
-        <h1 className={styles.text}>
-          100 Thousand Songs, ad-free <br /> Over thousands podcast episodes
-        </h1>
-        <img className={styles.image} src={HeroImage} alt="headphone" />
+        <div>
+          <h1>100 Thousand Songs, ad-free</h1>
+          <h1>Over thousands podcast episodes</h1>
+        </div>
+        <div>
+          <img
+            className={styles.image}
+            width={112}
+            src={HeroImage}
+            alt="headphones"
+          />
+        </div>
       </div>
     </>
   );

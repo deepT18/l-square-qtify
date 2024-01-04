@@ -1,4 +1,4 @@
-.albumHeader{
+/* .albumHeader{
     padding: 20px;
     margin-left: 6px;
     display: flex;
@@ -6,11 +6,7 @@
     flex-direction: column;
     align-items: center;
 }
-/* .sectionDiv{
-} */
-.wrapper{
-    padding: 0px;
-}
+
 .headingShow{
     width: 100%;
     margin-bottom: 10px;
@@ -20,4 +16,37 @@
 }
 .toggleText{
     cursor: pointer;
+}
+.albumSection{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+    width:relative;
+    height:488px;
+    top:48px;
+    gap:24px;
+} */
+
+/* .carousel-container{
+    width:1,353px;
+    height:488px;
+    top:48px;
+    gap:40px;
+}
+.carousel-css{
+
+} */
+
+.headingShow{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.wrapper{
+    margin-top: 18px;
+}
+.toggleText{
+    cursor: pointer;
+    color:var(--color-primary)
 }

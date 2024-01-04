@@ -1,0 +1,21 @@
+/* .rightNavigation{
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: var(--color-white);
+} */
+/* .rightDiv{
+    border: 2px solid blue;
+    align-items: center;
+} */
+
+.rightNavigation{
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: var(--color-white);
+}

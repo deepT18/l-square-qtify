@@ -4,6 +4,6 @@ import "../../index.css"
 
 export default function FeedBack({props}){
     return(
-    <button className={styles.feedback} value={props}>{props}</button>
+    <button className={styles.feedback}>{props}</button>
     )
 }

@@ -1,42 +1,48 @@
 import React, { useState } from "react";
-import axios from "axios";
 import Card from "../Card/Card.jsx";
 import Grid from "@mui/material/Grid";
 import styles from "./Section.module.css";
 import { CircularProgress } from "@mui/material";
+import Carousel from "../Carousel/Carousel.jsx";
 
-const AlbumSection = ({ data, title }) => {
+const AlbumSection = ({ datas, title, type }) => {
   const [toggle, setToggle] = useState(true);
 
   const handleToggle = () => {
-    setToggle(!toggle);
+    setToggle((prevState) => !prevState);
   };
 
   return (
-    <div className={styles.albumHeader}>
+    <div>
       <div className={styles.headingShow}>
         <h3>{title}</h3>
         <h4 onClick={handleToggle} className={styles.toggleText}>
           {toggle ? "Collapse" : "Show All"}
         </h4>
       </div>
-  
-      {data && data.length === 0 ? (
-        <CircularProgress />
-      ) : (
-        toggle ? (
+
+      <div className="albumSection">
+        {datas === null || datas === undefined ? (
+          <CircularProgress />
+        ) : toggle ? (
           <div className={styles.wrapper}>
-            <Grid container spacing={2}>
-              {data.map((album) => (
-                <Grid item key={album.id} xs={12} sm={6} md={6} lg={2}>
-                  <Card album={album} key={album.id} />
+            <Grid container className={styles.gridContainer} spacing={2}>
+              {datas.map((data) => (
+                <Grid item key={data.id} lg={2}>
+                  <Card data={data} key={data.id} type="album" />
                 </Grid>
               ))}
             </Grid>
           </div>
-        ) : null
-      )}
+        ) : (
+          <Carousel
+            datas={datas}
+            renderComponent={(ele) => <Card data={ele} type={type} />}
+          />
+        )}
+      </div>
     </div>
   );
-              }; 
+};
+
 export default AlbumSection;

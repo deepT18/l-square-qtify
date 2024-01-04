@@ -1,14 +1,21 @@
+.wrapper{
+  width: 160px;
+}
+
 .card {
-  width: 159px;
-  height: 232px;
+  position:relative;
+  width: 160px;
+  height: 205px;
+  border-radius: 10px;
+  overflow: hidden;
   /* gap: 6px; */
   /* border:2px solid red */
 }
-.img {
-  width: 159px;
+/* .img {
+  width: 160px;
   height: 170px;
   border-radius: 10px, 10px, 0px, 0px;
-}
+} */
 /* .cardChip{
 background-color:var(--color-black);
 color: var(--color-white); 
@@ -20,7 +27,7 @@ padding: 4px, 8px, 4px, 8px;
 border-radius: 10px;
 gap: 1px;
 } */
-.albumName{
+/* .albumName{
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
@@ -28,9 +35,29 @@ gap: 1px;
     letter-spacing: 0px;
     text-align: left;
 
-}
-.imageCard{
+} */
+/* .imageCard{
     background-color: var(--color-white);
     border-radius: 10px;
     height: 205px;
+} */
+
+.banner{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width:100%;
+  height:42px;
+  background-color: var(--color-white);
+  display:flex;
+  align-items: center;
+  padding:6px;
+}
+.titlewrapper{
+  margin-top:6px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  -webki-line-clamp:2;
+  display:-webkit-box;
+  -webkit-box-orient: vertical;
 }

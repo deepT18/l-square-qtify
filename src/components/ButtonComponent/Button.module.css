@@ -1,15 +1,15 @@
 .feedback{
     background-color: var(--color-black);
     color:var(--color-primary) ;
-    width:170px;
+    /* width:170px;
     height:47px;
     top: 13px;
-    left: 1238px;
+    left: 1238px; */
     padding: 10px, 16px, 10px, 16px;
     border-radius: 12px;
-    border: 1px;
+    /* border: 1px; */
     gap: 10px;
     cursor:pointer;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 
 }
