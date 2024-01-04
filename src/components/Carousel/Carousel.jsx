@@ -42,13 +42,20 @@ import styles from "./carousel.module.css";
 // export default Carousel;
 
 import { Navigation } from 'swiper';
-import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React,{useEffect} from "react";
+import { Swiper, SwiperSlide,useSwiper } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+const Controls=({datas})=>{
+  const swiper=useSwiper();
+  useEffect(()=>{
+    swiper.slideTo(0)
+  },[datas]);
+  return <></>
+}
 
 const Carousel=({datas,renderComponent}) => {
   return (
@@ -63,6 +70,7 @@ const Carousel=({datas,renderComponent}) => {
       allowTouchMove
       
     >
+      <Controls datas={datas}/>
       <CarouselLeftNavigation />
       <CarouselRightNavigation />
       {datas.map((ele)=>(<SwiperSlide>{renderComponent(ele)}</SwiperSlide>))}
