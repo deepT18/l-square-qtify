@@ -17,7 +17,7 @@ const AlbumSection = ({ datas, title, type }) => {
       <div className={styles.headingShow}>
         <h3>{title}</h3>
         <h4 onClick={handleToggle} className={styles.toggleText}>
-          {toggle ? "Collapse" : "Show All"}
+          {toggle ? "Collapse" : "Show all"}
         </h4>
       </div>
 
