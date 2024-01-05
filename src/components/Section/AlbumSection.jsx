@@ -6,7 +6,7 @@ import { CircularProgress } from "@mui/material";
 import Carousel from "../Carousel/Carousel.jsx";
 
 const AlbumSection = ({ datas, title, type }) => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
     setToggle((prevState) => !prevState);
