@@ -50,3 +50,8 @@
     cursor: pointer;
     color:var(--color-primary)
 }
+
+.filterWrapper{
+    padding:25px;
+    color: white;
+}
